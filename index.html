@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | Interactive pricing component</title>
 
@@ -15,21 +17,41 @@
   </style>
 </head>
 <body>
+  <header>
+    <h1>Simple, traffic-based pricing</h1>
+    <h2>Sign-up for our 30-day trial. No credit card required. </h2>
+  </header>
+  
+  <div class="price-container">
+    100k Pageviews
 
-  Simple, traffic-based pricing
-  Sign-up for our 30-day trial. No credit card required. 
+  $16.00 /month
+  <input type="range" id="price">
 
-  Pageviews
-  $ /month
+    Monthly Billing
+    <div class="toggle-container">
+      <div class="circle-container"></div>
+    </div>
+    Yearly Billing 25% discount
+  </div>
+  
+  <div class="check-submit-container">
 
-  Monthly Billing
-  Yearly Billing 25% discount
+    <label for="c1">Unlimited websites</label>
+    <input type="checkbox" id="c1">
 
-  Unlimited websites
-  100% data ownership
-  Email reports
+    <label for="c2">100% data ownership</label>
+    <input type="checkbox" id="c2">
 
-  Start my trial
+    <label for="c3">Email reports</label>
+    <input type="checkbox" id="c3">
+
+    <button>Start my trial</button>
+    
+  </div>
+ 
+
+ 
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
