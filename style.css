@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    background-color: #F9FAFF;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+
+    font-family: 'Manrope', sans-serif;
+}
+.bg-blue {
+    background: #F1F5FE;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    top: 0;
+    z-index: -1;
+
+    
+
+    border-radius:  0 0 0 110px;
+}
+.price-container {
+    background: hsl(0, 0%, 100%);
+}
+.bg-blue img{
+    position: absolute; 
+    left: 45%; 
+    top: 20%;
+}
+.check-submit-container {
+    background:hsl(230, 100%, 99%);
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 15%;
+}
+header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header h2 {
+    margin: 0;
+}
+header h3 {
+
+}
