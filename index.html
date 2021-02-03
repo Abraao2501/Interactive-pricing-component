@@ -11,9 +11,9 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="style.css" />
 
     <title>Frontend Mentor | Interactive pricing component</title>
@@ -30,46 +30,66 @@
     </style>
   </head>
   <body>
-    <div class="bg-blue">
-      <img src="/images/pattern-circles.svg" alt="">
-    </div>
-
-
-    <header>
-      <h2><strong>Simple, traffic-based pricing</strong></h2>
-      <h3>Sign-up for our 30-day trial. No credit card required.</h3>
-    </header>
+    <div class="bg-blue"></div>
     <main>
-      <div class="price-container">
-        100k Pageviews $16.00 /month
-        <input type="range" id="price" />
 
-        Monthly Billing
-        <div class="toggle-container">
-          <div class="circle-container"></div>
+      <img src="images\pattern-circles.svg" alt="circles">
+
+      <header>
+          <h2>Simple, traffic-based pricing</h2>
+          <h3>Sign-up for our 30-day trial. No credit card required.</h3>
+      </header>
+
+      <div class="container">
+
+        <section class="title">
+          <p id="page-views">100K PAGEVIEWS</p> 
+          <p id="price"><strong>$16.00</strong> / month</p>
+        </section>
+
+        <input type="range" class="range">
+
+        <div class="discount-toggle">
+          <p id="monthly">Monthly Billing</p> 
+          <div class="power-button">
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox" class="toggle" id="label"></label> 
+          </div>
+      
+         <p id="discount">
+          Yearly Billing <strong>25% discount</strong>
+         </p> 
         </div>
-        Yearly Billing 25% discount
-      </div>
 
-      <div class="check-submit-container">
-        <label for="c1">Unlimited websites</label>
-        <input type="checkbox" id="c1" />
+        <footer>
+          <section class="checkbox">
 
-        <label for="c2">100% data ownership</label>
-        <input type="checkbox" id="c2" />
+            <input type="checkbox" id="Unlimited"> 
+            <label for="Unlimited">Unlimited websites</label> <br>
+            
+            <input type="checkbox" id="100%"> 
+            <label for="100%">100% data ownership</label> <br>
+            
+            <input type="checkbox" id="Email"> 
+            <label for="Email">Email reports</label>  
+             
+          </section>
 
-        <label for="c3">Email reports</label>
-        <input type="checkbox" id="c3" />
-
-        <button>Start my trial</button>
-      </div>
+          <button>Start my trial</button>
+        </footer>
+  
+        
+      </div> 
     </main>
 
+    <!--
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div>
+    -->
+
   </body>
 </html>
