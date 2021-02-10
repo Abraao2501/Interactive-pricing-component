@@ -84,8 +84,33 @@ section.title p#price strong {
     font-weight: 800;
 }
 .range {
+    -webkit-appearance: none;
     width: 85%;
     cursor: pointer;
+    outline: none;
+}
+.range::-webkit-slider-runnable-track {
+    background-color: hsl(174, 77%, 80%);;
+    width: 75%;
+    height: 10px;
+    border-radius: 20px; 
+}
+.range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background: hsl(174, 86%, 45%);
+  box-shadow: 5px 10px 50px 1px #28F9E4;
+  cursor: pointer;
+  margin-top:  -12px;
+}
+
+/*For Firefox*/
+.range input::-moz-range-progess {
+    -webkit-appearance: none;
+    background:hsl(174, 77%, 80%);
 }
 .discount-toggle{
     display: flex;

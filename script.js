@@ -4,7 +4,7 @@ const priceNumberTxt = document.querySelector('.priceNumber')
 
 rangeInput.value = 100
 
-rangeInput.addEventListener('click', () => {
+rangeInput.addEventListener('input', () => {
    let valueRange = rangeInput.valueAsNumber
 
    let views = valueRange
@@ -12,7 +12,6 @@ rangeInput.addEventListener('click', () => {
    
    pageViews.innerHTML = `${views}K PAGEVIEWS`
    priceNumberTxt.innerHTML = `$${price}`
-   
 })
 
 
