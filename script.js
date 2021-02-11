@@ -12,6 +12,10 @@ rangeInput.addEventListener('input', () => {
    
    pageViews.innerHTML = `${views}K PAGEVIEWS`
    priceNumberTxt.innerHTML = `$${price}`
+
+   if (views === 1000) {
+      pageViews.innerHTML = `${views}000 PAGEVIEWS`
+   }
 })
 
 

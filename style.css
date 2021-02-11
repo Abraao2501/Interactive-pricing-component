@@ -32,6 +32,8 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    animation: title 0.5s;
+   
 }
 header h2 {
     color:hsl(227, 35%, 25%);
@@ -58,6 +60,7 @@ header h3 {
     justify-content: space-around;
 
     background-color: hsl(0, 0%, 100%);
+    animation: title 0.3s;
 }
 section.title {
     width: 100%;
@@ -102,9 +105,12 @@ section.title p#price strong {
   width: 35px;
   border-radius: 50%;
   background: hsl(174, 86%, 45%);
-  box-shadow: 5px 10px 50px 1px #28F9E4;
   cursor: pointer;
   margin-top:  -12px;
+}
+.range::-webkit-slider-thumb:active {
+    transition: box-shadow 0.5s;
+    box-shadow: 5px 10px 50px 1px #28F9E4;
 }
 
 /*For Firefox*/
@@ -162,6 +168,7 @@ input#checkbox {
     left: 2.4rem;
     background-color: hsl(174, 86%, 45%);
     border: 1px solid  hsl(174, 38%, 70%);
+    box-shadow: 3px 3px 30px 3px #28F9E4;
 }
 #checkbox:checked + .power-button {
     background-color: hsl(174, 56%, 78%);
@@ -180,7 +187,7 @@ footer section.checkbox {
 }
 footer button {
     cursor: pointer; 
-    background-color:hsl(227, 35%, 25%);
+    background-color:hsla(227, 35%, 25%);
     width: 170px;
     height: 42px;
     border-radius: 20px;
@@ -190,4 +197,22 @@ footer button {
     font-weight: 600;
     
     border: none;
+    
+
+}
+footer button:hover {
+    transition: background-color 0.3s;
+    background-color:hsla(227, 35%, 25%, 0.801);
+}
+
+/*Animations*/
+@keyframes title{
+    from {
+        opacity: 0;
+        transform: translateX(-35%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
 }
