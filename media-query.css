@@ -1,0 +1,117 @@
+@media(max-width: 768px){
+    .container {
+        width: 70vw;
+    }
+}
+@media(max-width: 646px) {
+    .container {
+        width: 90vw;
+    }
+}
+@media(max-width:480px){
+    header h2 {
+        font-size: 1.8rem;
+    }
+    header h3 {
+        font-size: 0.7rem;
+    }
+    .container {
+        height: 70vh;
+    }
+    section.title {
+        margin-bottom: 20px;
+    }
+    p#page-views{
+        font-size: 0.8rem;
+        letter-spacing: 2px;
+    }
+    p#price {
+        font-size: 0.8rem;
+    }
+    section.title p#price strong {
+        font-size: 2.2rem;
+    }
+    .range::-webkit-slider-thumb{
+        height: 30px;
+        width: 30px;
+    }
+    p#monthly {
+        margin-right: 1.3vw;
+        font-size: 0.7rem;
+    }
+    p#discount {
+        margin-left: 1.3vw;
+        font-size: 0.7rem;
+    }
+    p#discount strong {
+        margin-left: 1.3vw;
+        font-size: 0.6rem;
+    }
+    input.range {
+        margin-bottom: 25px;
+    }
+    .power-button {
+        width: 3.8rem;
+        height: 1.8rem;
+    }
+    .toggle {
+        width: 1.5rem;
+        top: 2.5px;
+    }
+    footer { 
+        flex-direction: column;
+        height: 20vvh;
+    }
+    footer button {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    footer section.checkbox {
+        margin-top: 25px;
+    }
+}
+@media(max-width:405px){
+    .container {
+        margin-bottom: 30px;
+    }
+    img {
+       width: 7em;
+       height: 7em;
+    }
+    header h2 {
+        text-align: center;
+    }
+    p#page-views{
+        font-size: 0.7rem;
+        letter-spacing: 2px;
+    }
+    section.title p#price strong {
+        font-size: 2rem;
+    }
+    .range::-webkit-slider-thumb{
+        height: 25px;
+        width: 25px;
+
+        margin-top: -8px;
+    }
+}
+@media(max-width:330px) {
+    p#monthly {
+        margin-right: 1.3vw;
+        font-size: 0.7rem;
+        text-align: center;
+    }
+    p#discount {
+        margin-left: 1.3vw;
+        font-size: 0.7rem;
+        text-align: center;
+    }
+    p#discount strong {
+        margin-left: 1.3vw;
+        font-size: 0.6rem;
+        text-align: center;
+    }
+    footer section.checkbox {
+       font-size: 0.8rem;
+    }
+}
